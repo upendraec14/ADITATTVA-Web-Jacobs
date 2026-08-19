@@ -1,0 +1,1 @@
+(function(o,r){o.behaviors.carouselLargeSlide={attach(a){r("homepage-hero-slide",'[data-component-id="jacobs:homepage-hero-slide"]:has(iframe)',a).forEach(e=>{e.querySelector("iframe")&&e.querySelector(".controls")})}}})(Drupal,once);

@@ -1,0 +1,3 @@
+/* @license GPL-2.0-or-later https://www.drupal.org/licensing/faq */
+(function(Drupal){'use strict';Drupal.behaviors.addToAny={attach:function(context,settings){if(context!==document&&window.a2a)a2a.init_all();}};})(Drupal);;
+(function($){'use strict';$(document).ready(function(){$(document).on('click','.tab-heading a.pmm-desktop-link',function(event){if(window.innerWidth<1024){var $link=$(this);var $parentButton=$link.closest('.tab-heading');if($parentButton.length){var clickX=event.pageX-$parentButton.offset().left;var buttonWidth=$parentButton.outerWidth();var arrowZoneStart=buttonWidth-48;if(clickX>=arrowZoneStart){event.preventDefault();event.stopPropagation();}}}});});})(jQuery);;
